@@ -1,0 +1,47 @@
+{
+  "name": "@systemadmin-cli/core",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Core system administration toolkit with MCP server implementation and safety validation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "system administration",
+    "mcp",
+    "typescript",
+    "cli",
+    "automation",
+    "safety"
+  ],
+  "author": "SystemAdmin-CLI Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "boxen": "^7.1.1",
+    "sudo-prompt": "^9.2.1",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/fs-extra": "^11.0.0",
+    "typescript": "^5.0.0",
+    "tsc-alias": "^1.8.8",
+    "vitest": "^1.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+} 

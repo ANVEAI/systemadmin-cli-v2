@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# SystemAdmin-CLI v2 Startup Script
+# Advanced system administration CLI toolkit
+
+# Get the directory of this script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+# Run the CLI with all passed arguments
+exec node "$DIR/packages/cli/dist/cli.js" "$@" 
